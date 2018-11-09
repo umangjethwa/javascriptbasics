@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>How many Fingures are you holding?</p>
+    <p><input type="text" id ="mynumber"></p>
+    <button id = "guess">Guess</button>
+    
+    <script>
+        
+        document.getElementById("guess").onclick = function(){
+
+            var mynumber = document.getElementById("mynumber").value;
+            var gotit = false;
+            var numberofguesses = 1;
+            
+            while(gotit == false){
+
+                var guess = Math.random();
+                guess = guess * 6;
+                guess = Math.floor(guess);
+                
+                 if(guess == mynumber){
+
+                    gotit = true;
+                    alert(" Gotcha It was a " + guess + " It took me " + numberofguesses + " guesses ");
+
+                 } else{
+
+                     numberofguesses++;
+                 }
+                
+            }
+
+        }
+        
+        
+    </script>
+    
+</body>
+</html>

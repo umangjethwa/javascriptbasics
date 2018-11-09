@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>What is the magic wors?</p>
+    <p><input type="text" id = "magicworld"></p>
+
+    <p><button id = "checkmagicworld">Enter</button></p>
+
+    <script>
+        
+        document.getElementById("checkmagicworld").onclick = function (){
+
+            var magicworentered = document.getElementById("magicworld").value;
+            //alert(magicworentered);
+
+            var magicworld = "abracadabra";
+            if(magicworentered == magicworld){
+                alert("You got it");
+
+            } else{
+
+                alert("Nope");
+            }
+                
+        }
+
+        /*var x = 2;
+
+        if (x==1){
+
+            alert("X is 1");
+        } else {
+
+            alert("X is not 1");
+        }*/
+        
+    </script>
+
+</body>
+</html>

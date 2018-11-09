@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>How many fongers I am holding?</p>
+
+    <p><input type="text" id = "guess"></p>
+
+    <button id = "checkguess">Guess</button>
+
+    <script>
+        
+        document.getElementById("checkguess").onclick = function(){
+
+            var randomnumber = Math.random();
+
+            randomnumber = randomnumber *6;
+            randomnumber = Math.floor(randomnumber);
+
+            if(document.getElementById("guess").value == randomnumber) {
+
+                alert("Wll Done You Done");
+            } else{
+
+                alert("Nope! Try Again" + randomnumber);
+            }
+        }
+
+        //alert(Math.floor(Math.random() * 6)); // To generate random no
+        
+    </script>
+    
+</body>
+</html>

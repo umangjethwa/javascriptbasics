@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>Variable</title>
+
+</head>
+<body>
+    <input type="text" id = "textinput">
+
+    <button id="TextChanger">Change the Text</button>
+
+    <p id = "text">This is some Text</p>
+    <script>
+        
+        var name = "Umang";
+        //alert(name)
+        document.getElementById("TextChanger").onclick = function(){
+
+            var textentered = "";
+            textentered = document.getElementById("textinput").value;
+            alert(textentered);
+            //console.log(textentered); // to print on console
+            document.getElementById("text").innerHTML = textentered;
+
+            //alert("Hi Umang");
+        }
+    </script>
+    
+</body>
+</html>
